@@ -1,0 +1,18 @@
+{
+  "name": "genesis-sample-tbd",
+  "version": "1.0.0",
+  "description": "Github project link: https://github.com/copyblogger/genesis-sample/",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch styles/style.scss -o ../genesis-sample-tbd"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  }
+}

@@ -1,0 +1,23 @@
+/*
+	Theme Name: Genesis Sample TBD
+	Theme URI: http://www.yourdomain.com/
+	Description: This is a sample child theme created for the Genesis Framework.
+	Author: Your Business Name
+	Author URI: http://www.yourbusiness.com/
+	Version: 1.0
+	
+	Tags: custom-background, custom-header, featured-images, threaded-comments, two-columns
+	
+	Template: genesis
+	Template Version: 1.7.1
+	License: GNU General Public License v2.0
+	License URI: http://www.opensource.org/licenses/gpl-license.php
+*/
+
+/** Common */
+@import "common/flex_grid";
+@import "common/genesis_sample";
+
+/** Organisms */
+@import "organisms/home_top"; 
+@import "organisms/footer"; 
