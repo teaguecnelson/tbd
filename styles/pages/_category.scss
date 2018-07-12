@@ -1,0 +1,29 @@
+.archive-description {
+    background-color: #1E417A;
+    padding: 3rem 0;
+}
+
+.category-desc {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include makeRow($no-padding:true);
+}
+
+.archive-title {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 2rem;
+    color: #fff;
+}
+
+.category-desc-text {
+    @include makeColumn($size:6, $offset:0);
+    
+    padding: 0 30px;
+    color: #fff;
+}
+
+.category-desc-video {
+
+}
