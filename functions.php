@@ -297,14 +297,6 @@ function sp_footer_creds_filter( $creds ) {
 	return $creds;
 }
 
-// Register widget areas.
-genesis_register_sidebar( array(
-	'id'          => 'front-page-top',
-	'name'        => __( 'Front Page Top', 'genesis-sample-tbd' ),
-	'description' => __( 'This is a widget that goes on the front page.', 'genesis-sample-tbd' ),
-) );
-
-
 // Add Read More Link to Excerpts
 add_filter('excerpt_more', 'get_read_more_link');
 add_filter( 'the_content_more_link', 'get_read_more_link' );
@@ -324,7 +316,7 @@ add_action ( 'genesis_entry_header', 'not_single_remove_post_meta' );
 // Customize entry meta header
 add_filter( 'genesis_post_info', 'modify_post_info_filter' );
 function modify_post_info_filter( $post_info ) {
-	$post_info = '[post_comments]';
+	$post_info = 'By The Budget Diet Team [post_comments] </br> <i>THIS POST MAY CONTAIN AFFILIATE LINKS. PLEASE READ MY <a href="/affiliate-disclosure/">DISCLOSURE</a> FOR MORE INFO.</i>';
 	return $post_info;
 }
 
@@ -335,3 +327,33 @@ function home_remove_post_meta() {
 		}
 }
 add_action ( 'genesis_entry_header', 'home_remove_post_meta' );
+
+// Customize  entry meta footer
+add_filter( 'genesis_post_meta', 'change_post_meta_filter' );
+function change_post_meta_filter( $post_meta ) {
+	$post_meta = '[post_categories]';
+	return $post_meta;
+}
+
+// Registering 3rd Menu
+function register_additional_menu() {
+	register_nav_menu( 'third-menu' ,__( 'Third Navigation Menu' ));
+}
+
+add_action( 'init', 'register_additional_menu' );
+add_action( 'genesis_after_header', 'add_third_nav_genesis' ); 
+	
+function add_third_nav_genesis() {
+	wp_nav_menu( array( 'theme_location' => 'third-menu', 'container_class' => 'genesis-nav-menu thrid-nav-menu' ) );
+}
+
+// Register widget area for Front Page Hero.
+genesis_register_sidebar( array(
+	'id'          => 'front-page-top',
+	'name'        => __( 'Front Page Top', 'genesis-sample-tbd' ),
+	'description' => __( 'This is a widget that goes on the front page.', 'genesis-sample-tbd' ),
+) );
+
+//Removes Title and Description on Archive, Taxonomy, Category, Tag
+remove_action( 'genesis_before_loop', 'genesis_do_taxonomy_title_description', 15 );
+add_action( 'genesis_after_header', 'genesis_do_taxonomy_title_description' );

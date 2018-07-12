@@ -18,6 +18,17 @@
 @import "common/flex_grid";
 @import "common/genesis_sample";
 
+/** atoms */
+@import "atoms/text";
+
+/** Molecules */
+@import "molecules/third_menu"; 
+
 /** Organisms */
+@import "organisms/header"; 
 @import "organisms/home_top"; 
-@import "organisms/footer"; 
+@import "organisms/footer";
+
+/** Pages */
+@import "pages/home";
+@import "pages/post";   

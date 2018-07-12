@@ -63,14 +63,14 @@
 /**
   * Spacing mixin to create uniform margin/padding
   */
-.home-top, .top-section {
+.home .home-top, .home .top-section {
   display: flex;
   display: -webkit-flex; }
 
 /**
   * Row wrapper class, flex box parent.
   */
-.home-top {
+.home .home-top {
   box-sizing: border-box;
   flex-flow: wrap;
   -webkit-flex-flow: wrap;
@@ -80,16 +80,16 @@
   margin-right: -0.5rem;
   padding-left: 2rem;
   padding-right: 2rem; }
-  @media only screen and (min-width: 978px) {
-    .home-top {
+  @media only screen and (min-width: 976px) {
+    .home .home-top {
       margin-left: -0.75rem;
       margin-right: -0.75rem; } }
-  @media only screen and (min-width: 978px) {
-    .home-top {
+  @media only screen and (min-width: 976px) {
+    .home .home-top {
       padding-left: 3rem;
       padding-right: 3rem; } }
 
-.top-section {
+.home .top-section {
   box-sizing: border-box;
   flex-direction: column;
   flex-grow: 0;
@@ -99,8 +99,8 @@
   -webkit-flex-shrink: 0;
   padding-left: 0.5rem;
   padding-right: 0.5rem; }
-  @media only screen and (min-width: 978px) {
-    .top-section {
+  @media only screen and (min-width: 976px) {
+    .home .top-section {
       padding-left: 0.75rem;
       padding-right: 0.75rem; } }
 
@@ -116,20 +116,20 @@
   * Step 1, for each namespace, create the grid-base
   * Step 2, for each namespace, wrap the col width/offset measurements in their breakpoint media query
   */
-.top-section {
+.home .top-section {
   flex-basis: 100%;
   max-width: 100%;
   -webkit-flex-basis: 100%; }
 
-.top-section {
+.home .top-section {
   margin-left: 0%; }
 
-@media only screen and (min-width: 978px) {
-  .top-section {
+@media only screen and (min-width: 976px) {
+  .home .top-section {
     flex-basis: 33.33333%;
     max-width: 33.33333%;
     -webkit-flex-basis: 33.33333%; }
-  .top-section {
+  .home .top-section {
     margin-left: 0%; } }
 
 /* Table of Contents
@@ -366,17 +366,17 @@ html {
 
 /* Chrome fix */
 body > div {
-  font-size: 18px;
-  font-size: 1.8rem; }
+  font-size: 19px;
+  font-size: 1.9rem; }
 
 body {
   background-color: #fff;
-  color: #333;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 1.625;
+  color: #484848;
+  font-family: 'Raleway', 'Source Sans Pro', sans-serif;
+  font-size: 19px;
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 1.6;
   margin: 0; }
 
 button,
@@ -443,50 +443,6 @@ blockquote::before {
   left: -20px;
   position: relative;
   top: -10px; }
-
-/* Headings
---------------------------------------------- */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  line-height: 1.2;
-  margin: 0 0 20px; }
-
-h1 {
-  font-size: 30px;
-  font-size: 3rem; }
-
-h2 {
-  font-size: 27px;
-  font-size: 2.7rem; }
-
-.entry-content h3,
-.entry-content h4 {
-  font-weight: 600; }
-
-h3 {
-  font-size: 24px;
-  font-size: 2.4rem; }
-
-h4 {
-  font-size: 20px;
-  font-size: 2rem; }
-
-.entry-content h4 {
-  margin-top: 40px; }
-
-h5 {
-  font-size: 18px;
-  font-size: 1.8rem; }
-
-h6 {
-  font-size: 16px;
-  font-size: 1.6rem; }
 
 /* Objects
 --------------------------------------------- */
@@ -822,9 +778,11 @@ th:first-child {
   margin-bottom: 10px; }
 
 .entry-title {
-  font-size: 30px;
-  font-size: 3rem;
-  margin-bottom: 10px; }
+  margin-bottom: 16px;
+  text-align: left;
+  padding-left: 0px;
+  font-size: 34px;
+  font-weight: 600; }
 
 .entry-title a,
 .sidebar .widget-title a {
@@ -1031,7 +989,7 @@ img.alignright,
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
   background-color: #fff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 -2px 6px #6e6e6e;
   padding: 0 30px; }
 
 /* Title Area
@@ -1059,7 +1017,6 @@ img.alignright,
   color: #333;
   text-decoration: none; }
 
-.site-description,
 .wp-custom-logo .site-title {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -1312,7 +1269,7 @@ p.entry-meta {
 .archive-pagination li a:focus,
 .archive-pagination li a:hover,
 .archive-pagination li.active a {
-  background-color: #333;
+  background-color: #2C872E;
   color: #fff; }
 
 /* Entry Comments
@@ -1658,23 +1615,127 @@ p.entry-meta {
   ul {
     page-break-before: avoid; } }
 
-/** Organisms */
-.featured-widget-area {
-  max-width: 1140px;
-  margin: 10rem auto; }
+/** atoms */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 20px; }
 
-.site-tagline {
+h1 {
+  font-size: 30px;
+  font-size: 3.25rem; }
+
+h2 {
+  font-size: 27px;
+  font-size: 2.7rem; }
+
+.entry-content h3,
+.entry-content h4 {
+  font-weight: 600; }
+
+h3 {
+  font-size: 24px;
+  font-size: 2.4rem; }
+
+h4 {
+  font-size: 20px;
+  font-size: 2rem; }
+
+.entry-content h4 {
+  margin-top: 40px; }
+
+h5 {
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+h6 {
+  font-size: 16px;
+  font-size: 1.6rem; }
+
+/** Molecules */
+.thrid-nav-menu {
+  display: none;
+  margin-top: 83px;
+  height: 45px;
+  background-color: #4F77a0; }
+  @media only screen and (min-width: 976px) {
+    .thrid-nav-menu {
+      display: block; } }
+
+#menu-3rd-menu {
   text-align: center;
-  margin: 2rem auto 5rem;
-  font-size: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 45px; }
+
+#menu-3rd-menu li {
+  line-height: 1.5;
+  color: #fff; }
+
+#menu-3rd-menu li a {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  color: #fff;
+  padding: 12px 16px;
+  display: inline-block;
+  text-transform: uppercase; }
+
+/** Organisms */
+.title-area {
+  padding: 20px 0; }
+  @media only screen and (min-width: 976px) {
+    .title-area {
+      padding: 25px 0; } }
+
+.site-description {
+  font-size: 10px;
+  padding: 2px 0;
+  font-weight: 600;
+  margin: 3px 0 0;
+  border-top: 1px solid #c7c7c7;
+  text-align: center; }
+
+@media only screen and (min-width: 976px) {
+  .site-header {
+    height: 83px;
+    padding: 4px 0; }
+  .site-header .wrap {
+    padding: 0 30px;
+    height: 74px;
+    margin: 0 auto;
+    max-width: 1200px; }
+  #menu-main a {
+    color: #585858;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase; } }
+
+.home .featured-widget-area {
+  max-width: 1140px;
+  margin: 0 auto;
+  border-bottom: 2px solid #f5f5f5; }
+
+.home .site-tagline {
+  text-align: center;
+  margin: 7rem auto 5rem;
+  font-size: 58px;
   font-weight: 800;
   max-width: 700px; }
 
-.home-top {
+.home .home-top {
   padding: 0;
   padding: 0.5rem; }
 
-.top-section-title {
+.home .top-section-title {
   text-align: center;
   font-size: 2rem;
   font-weight: 800; }
@@ -1682,3 +1743,17 @@ p.entry-meta {
 .footer-widgets,
 .site-footer {
   background-color: #f2f2f2; }
+
+/** Pages */
+.home .site-inner {
+  padding: 4px 30px 0; }
+
+.entry-categories,
+.breadcrumb {
+  font-size: 12px;
+  margin-bottom: 20px; }
+
+.entry-categories a,
+.entry-comments-link a,
+.breadcrumb a {
+  color: #2C872E; }

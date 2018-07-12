@@ -1,0 +1,38 @@
+.title-area {
+    padding: 20px 0;
+
+    @include breakpoint($medium) {
+        padding: 25px 0;
+    }
+}
+
+.site-description {
+    font-size: 10px;
+    padding: 2px 0;
+    font-weight: 600;
+    margin: 3px 0 0;
+    border-top: 1px solid #c7c7c7;
+    text-align: center;
+}
+
+@include breakpoint($medium) {
+    .site-header {
+        height: 83px;
+        padding: 4px 0;
+    }
+
+    .site-header .wrap {
+        padding: 0 30px;
+        height: 74px;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    #menu-main a {
+        color: #585858;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+}
