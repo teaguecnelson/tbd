@@ -287,13 +287,13 @@ function genesis_sample_comments_gravatar( $args ) {
 //* Modify the length of post excerpts
 add_filter( 'excerpt_length', 'sp_excerpt_length' );
 function sp_excerpt_length( $length ) {
-	return 35; // pull first 50 words
+	return 38; // pull first 38 words
 }
 
-//* Change the footer text
+// Change the footer text
 add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
 function sp_footer_creds_filter( $creds ) {
-	$creds = 'Copyright [footer_copyright] The Budget Diet &middot; OMC V4M LLC &middot; <a href="/terms-of-use/">Terms of Use</a> &middot; <a href="/privacy-policy/">Privacy Policy</a> &middot; <a href="/dmca/">DMCA</a> &middot; <a href="/affiliate-disclosure/">Affiliate Disclosure</a>';
+	$creds = 'Copyright [footer_copyright] The Budget Diet &middot; OMC V4M LLC<br />Made with <i class="icon ion-heart"></i> in Seattle';
 	return $creds;
 }
 
@@ -320,7 +320,7 @@ function modify_post_info_filter( $post_info ) {
 	return $post_info;
 }
 
-//* Remove the post entry meta in the entry footer on homepage (requires HTML5 theme support)
+// Remove the post entry meta in the entry footer on homepage (requires HTML5 theme support)
 function home_remove_post_meta() {
 	if (is_home()) {
 		remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
@@ -328,7 +328,7 @@ function home_remove_post_meta() {
 }
 add_action ( 'genesis_entry_header', 'home_remove_post_meta' );
 
-// Customize  entry meta footer
+// Customize entry meta footer
 add_filter( 'genesis_post_meta', 'change_post_meta_filter' );
 function change_post_meta_filter( $post_meta ) {
 	$post_meta = '[post_categories]';
@@ -354,6 +354,12 @@ genesis_register_sidebar( array(
 	'description' => __( 'This is a widget that goes on the front page.', 'genesis-sample-tbd' ),
 ) );
 
-//Removes Title and Description on Archive, Taxonomy, Category, Tag
+// Moves Title and Description on Archive, Taxonomy, Category, Tag
 remove_action( 'genesis_before_loop', 'genesis_do_taxonomy_title_description', 15 );
 add_action( 'genesis_after_header', 'genesis_do_taxonomy_title_description' );
+
+// Enqueue Ionicons.
+add_action( 'wp_enqueue_scripts', 'sp_enqueue_ionicons' );
+function sp_enqueue_ionicons() {
+	wp_enqueue_style( 'ionicons', '//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css', array(), CHILD_THEME_VERSION );
+}

@@ -1,29 +1,30 @@
 .archive-description {
-    background-color: #1E417A;
-    padding: 3rem 0;
+  background-color: #1e417a;
+  padding: 3rem;
 }
 
 .category-desc {
-    max-width: 1200px;
-    margin: 0 auto;
+  @include makeRow($no-padding: true);
 
-    @include makeRow($no-padding:true);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .archive-title {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 0 2rem;
-    color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 2rem;
+  color: #fff;
 }
 
 .category-desc-text {
-    @include makeColumn($size:6, $offset:0);
-    
-    padding: 0 30px;
-    color: #fff;
-}
+  @include makeColumn($size: 12, $offset: 0);
+  @include makeColumn(md, $size: 6, $offset: 0);
 
-.category-desc-video {
+  padding: 1rem 0;
+  color: #fff;
 
+  @include breakpoint($medium) {
+    padding: 0 3rem;
+  }
 }

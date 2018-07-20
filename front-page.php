@@ -1,5 +1,5 @@
 <?php
-
+// Adds Front Page Widget Area (Registerd in functions.php)
 add_action( 'genesis_meta', 'my_homepage_setup' );
 /**
  * Add widget support for homepage.
@@ -7,7 +7,7 @@ add_action( 'genesis_meta', 'my_homepage_setup' );
  */
 function my_homepage_setup() {
 
-	if ( is_active_sidebar( 'front-page-top' ) )  {
+	if ( is_front_page() && !is_paged()  && is_active_sidebar( 'front-page-top' ) ) {
 
 		 //* Add front page top widget
 		add_action( 'genesis_after_header', 'display_front_page_top_widget' );

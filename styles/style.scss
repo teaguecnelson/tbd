@@ -1,13 +1,13 @@
 /*
 	Theme Name: Genesis Sample TBD
 	Theme URI: http://www.yourdomain.com/
-	Description: This is a sample child theme created for the Genesis Framework.
-	Author: Your Business Name
-	Author URI: http://www.yourbusiness.com/
-	Version: 1.0
+	Description: This is a Genesis child theme modified from the Genesis Sample Theme.
+	Author: Teague Nelson
+	Author URI: https://github.com/teaguecnelson
+	Version: 1.0.0
 	
 	Tags: custom-background, custom-header, featured-images, threaded-comments, two-columns
-	
+	Text-Domain: genesis-sample-tbd
 	Template: genesis
 	Template Version: 1.7.1
 	License: GNU General Public License v2.0
@@ -22,14 +22,14 @@
 @import "atoms/text";
 
 /** Molecules */
-@import "molecules/third_menu"; 
+@import "molecules/third_menu";
 
 /** Organisms */
-@import "organisms/header"; 
-@import "organisms/home_top"; 
+@import "organisms/header";
+@import "organisms/home_top";
 @import "organisms/footer";
 
 /** Pages */
 @import "pages/category";
 @import "pages/home";
-@import "pages/post";          
+@import "pages/post";

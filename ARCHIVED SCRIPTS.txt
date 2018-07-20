@@ -1,0 +1,64 @@
+These are archived scripts from Ash & Ryan. This Was inserted into site header in Genesis:
+
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+<meta name="p:domain_verify" content="452460c5a62700cc29aa02717a070d6c"/>
+
+<style>
+.genesis-nav-menu .sub-menu a {font-size: 20px;}
+.cfm{margin: 5px 0;}
+.comment-list ol.tips li{list-style-type: decimal;margin: 0!important;list-style-position: inside;padding: 0 0 10px 0;font-weight: normal;border-left:none}
+.comment-time{display:none}
+.wp-caption {position: relative;}
+.diy-step{text-align: left;font-size: 18px;margin: 0 0 10px 0;  display: block; padding: 8px 15px; position:absolute; bottom:32px;left:0px;width:100%;  background-color:#fff;  color:#000;  opacity:0.8;filter:alpha(opacity=80); }
+.diy-step strong{  margin-right: 5px;}
+.tptn_posts_widget ul li{padding: 5px 0 !important;  border-bottom: none !important;}
+.tptn_posts_widget ul li a img{vertical-align: middle; padding-right: 10px;}
+#featured-post-5.featuredpost .post,#featured-post-9.featuredpost .post{  width: 33%;  float: left;  border-bottom: none;  margin: 0;  padding: 0;}
+.essb_links.essb_template_tiny-retina{margin: 0 !important; padding: 0 5px 0 0 !important;}
+#featured-post-5.featuredpost .post h2{text-align:center;padding 0 5px;}
+h2 a {text-decoration: none;}
+#text-145{padding:10px 0 0 10px}
+.diff_level{color:#999999;  float: right;}
+
+.ad728{margin:0 0 10px 0}
+.content img.post-image{width:initial;display: block;margin: 0 auto;}
+
+img.size-large {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+ul#nav_social_links{  float: left;  margin: 0 0 0 10px;  padding-top: 10px;}
+ .footer-widgets .widget-area ul li{border-bottom:none;display:block}
+.more-link{float: right;font-weight: bold;margin-top: 10px;color: #000;}
+.content img.post-image{margin-bottom: initial;}
+.wp-caption, #content img{ max-width: 98%; height: auto; }
+
+::-moz-selection {
+	background-color: #E2C599 !important;
+}
+
+::selection {
+	background-color: #E2C599 !important;
+}
+.sticky { padding: 0 10px !important;}
+ @media(min-width: 360px) { .ad_header { width: 336px; height: 280px; }}
+ @media(min-width: 500px) { .ad_header { width: 468px; height: 60px; } }
+ @media(min-width: 800px) { .ad_header { width: 728px; height: 90px; } }
+
+@media only screen and (max-width: 767px) {
+ul li.brand {width:100%; text-align: center !important;}
+#featured-post-5.featuredpost .post,#featured-post-9.featuredpost .post{  width: 100%;  float: none;}
+}
+</style> 
+ 
+<script src="https://clientcdn.pushengage.com/core/16103.js"></script>
+<script>
+_pe.subscribe();
+</script>
+
+=======
+
+Archived Style from Ash & Ryan. Was inserted into site footer:
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54ca6ebe24fe891e" async="async"></script>
