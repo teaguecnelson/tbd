@@ -58,7 +58,90 @@ _pe.subscribe();
 </script>
 
 =======
+These are archived scripts from Ash & Ryan. This Was inserted into site header & Footer Plugin for header:
+
+<script type="text/javascript" data-noptimize="1" data-cfasync="false" src="//scripts.mediavine.com/tags/the-budget-diet-new-ownership.js"></script>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PCJKPS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PCJKPS');</script>
+<!-- End Google Tag Manager -->
+
+<style>
+.zip-submit {position: relative;clear: both;padding: 30px 20px 0 20px;margin: 20px 0;border: 1px solid rgba(0, 0, 0, 0.2);box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);height: auto; overflow: auto;}
+.zip-submit h3{    font-size: 32px;}
+.zip-submit h4{    font-size: 22px;}
+.zip-submit-text {display: block;float: left;margin-top: 0;width: -webkit-calc(100% - 320px);width: calc(100% - 320px);}
+.zip-submit-submit{display: block;float: left;position: relative;width: 320px;padding-bottom: 20px;}
+.zip-submit input[type="text"] {
+background-image: url("/images/location_pin.svg");
+background-size: auto 24px;
+background-repeat: no-repeat;
+background-position: 25px center;
+border: none;
+float: left;
+font-size: 170%;
+padding: 15px 15px 15px 65px;
+text-align: left;
+height: 50px;
+position: relative;
+}
+.zip-submit input[type="submit"] {
+background-color: #21C250;
+border: none;
+display: inline-block;
+font-weight: bold;
+width: 100%;
+height: 50px;
+padding: 1rem 1.5rem;
+border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+font-size: 100%;
+border-radius: 0px 5px 5px 0px;
+position: relative;
+}
+
+@media only screen and (max-width: 767px){
+.zip-submit-text {width:100%} 
+.zip-submit-submit{width:100%} 
+.zip-submit {padding:15px 10px}
+.zip-submit input[type="text"] {padding: 10px 0;
+    background-image: none;
+    background-size: initial;
+    width: 100%;
+    border: 1px #ccc solid;
+    margin: 10px 0;
+    text-align: center;
+    font-size: x-large !important;} 
+.zip-submit input[type="submit"] {padding:5px 1px;color: #fff;} 
+}
+</style>
+
+=======
 
 Archived Style from Ash & Ryan. Was inserted into site footer:
 
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54ca6ebe24fe891e" async="async"></script>
+
+=======
+
+These are archived scripts from Ash & Ryan. This Was inserted into site header & Footer Plugin for footer:
+
+<script type="text/javascript">
+	var trackcmp_email = '';
+	var trackcmp = document.createElement("script");
+	trackcmp.async = true;
+	trackcmp.type = 'text/javascript';
+	trackcmp.src = '//trackcmp.net/visit?actid=65926712&e='+encodeURIComponent(trackcmp_email)+'&r='+encodeURIComponent(document.referrer)+'&u='+encodeURIComponent(window.location.href);
+	var trackcmp_s = document.getElementsByTagName("script");
+	if (trackcmp_s.length) {
+		trackcmp_s[0].parentNode.appendChild(trackcmp);
+	} else {
+		var trackcmp_h = document.getElementsByTagName("head");
+		trackcmp_h.length && trackcmp_h[0].appendChild(trackcmp);
+	}
+</script>

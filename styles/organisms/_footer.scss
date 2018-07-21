@@ -3,6 +3,16 @@
   background-color: #f2f2f2;
 }
 
+.footer-widgets li a {
+  color: #484848;
+  text-decoration: none;
+
+  &:hover {
+    color: #0073e5;
+    text-decoration: underline;
+  }
+}
+
 .ion-heart {
   color: #FF0000;
 }
