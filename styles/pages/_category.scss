@@ -1,6 +1,7 @@
 .archive-description {
   background-color: #1e417a;
   padding: 3rem;
+  color: #fff;
 }
 
 .category-desc {
@@ -22,7 +23,6 @@
   @include makeColumn(md, $size: 6, $offset: 0);
 
   padding: 1rem 0;
-  color: #fff;
 
   @include breakpoint($medium) {
     padding: 0 3rem;

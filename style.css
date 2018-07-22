@@ -1820,7 +1820,8 @@ h6 {
 /** Pages */
 .archive-description {
   background-color: #1e417a;
-  padding: 3rem; }
+  padding: 3rem;
+  color: #fff; }
 
 .category-desc {
   padding: 0;
@@ -1834,8 +1835,7 @@ h6 {
   color: #fff; }
 
 .category-desc-text {
-  padding: 1rem 0;
-  color: #fff; }
+  padding: 1rem 0; }
   @media only screen and (min-width: 976px) {
     .category-desc-text {
       padding: 0 3rem; } }
