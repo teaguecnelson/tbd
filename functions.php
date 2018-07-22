@@ -358,7 +358,7 @@ genesis_register_sidebar( array(
 remove_action( 'genesis_before_loop', 'genesis_do_taxonomy_title_description', 15 );
 add_action( 'genesis_after_header', 'genesis_do_taxonomy_title_description' );
 
-// Enqueue Ionicons.
+// Enqueue Ionicons from ionicons.com
 add_action( 'wp_enqueue_scripts', 'sp_enqueue_ionicons' );
 function sp_enqueue_ionicons() {
 	wp_enqueue_style( 'ionicons', '//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css', array(), CHILD_THEME_VERSION );

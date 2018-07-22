@@ -15,3 +15,5 @@ It's using most of the Genesis Sample Theme CSS File, and adding Scss compiled a
 Log in to the WP Admin Dashboard on Local Machine is:
 teague@owlmountain.co
 t
+
+The Icons used are from ionicons.com. Usage instruction at: https://www.tutorialspoint.com/ionic/ionic_icons.htm

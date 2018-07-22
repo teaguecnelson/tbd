@@ -1767,10 +1767,18 @@ h6 {
 
 .home .site-tagline {
   text-align: center;
-  margin: 7rem auto 5rem;
+  margin: 4rem auto 2rem;
   font-size: 58px;
   font-weight: 800;
-  max-width: 700px; }
+  max-width: 700px;
+  padding: 0 0.475rem; }
+  @media only screen and (min-width: 976px) {
+    .home .site-tagline {
+      margin: 7rem auto 2rem; } }
+
+.home .site-sub-tagline {
+  text-align: center;
+  padding: 0 0.5rem; }
 
 .home .home-top {
   max-width: 100%;
@@ -1791,12 +1799,17 @@ h6 {
 .site-footer {
   background-color: #f2f2f2; }
 
-.footer-widgets li a {
+.footer-widgets a {
   color: #484848;
   text-decoration: none; }
-  .footer-widgets li a:hover {
+  .footer-widgets a:hover {
     color: #0073e5;
     text-decoration: underline; }
+
+.social-icon-footer {
+  font-size: 3rem;
+  font-size: 2.75rem;
+  padding: 0 1.5rem; }
 
 .ion-heart {
   color: #FF0000; }

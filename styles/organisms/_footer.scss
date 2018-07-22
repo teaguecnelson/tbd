@@ -3,7 +3,7 @@
   background-color: #f2f2f2;
 }
 
-.footer-widgets li a {
+.footer-widgets a {
   color: #484848;
   text-decoration: none;
 
@@ -11,6 +11,12 @@
     color: #0073e5;
     text-decoration: underline;
   }
+}
+
+.social-icon-footer {
+  font-size: 3rem;
+  font-size: 2.75rem;
+  padding: 0 1.5rem;
 }
 
 .ion-heart {
