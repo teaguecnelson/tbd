@@ -1810,6 +1810,9 @@ h6 {
   font-size: 3rem;
   font-size: 2.75rem;
   padding: 0 1.5rem; }
+  @media only screen and (min-width: 976px) {
+    .social-icon-footer {
+      padding: 0 1rem; } }
 
 .ion-heart {
   color: #FF0000; }
