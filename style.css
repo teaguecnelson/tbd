@@ -732,7 +732,10 @@ th:first-child {
 .site-inner {
   clear: both;
   margin: 0 auto;
-  padding: 60px 30px 0; }
+  padding: 60px 10px 0; }
+  @media only screen and (min-width: 976px) {
+    .site-inner {
+      padding: 60px 30px 0; } }
 
 /* Common Classes
 ---------------------------------------------------------------------------------------------------- */
@@ -1760,6 +1763,15 @@ h6 {
     letter-spacing: 1px;
     text-transform: uppercase; } }
 
+.sidebar-primary {
+  min-width: 300px !important; }
+
+#genesis-content {
+  padding: 0 20px; }
+  @media only screen and (min-width: 976px) {
+    #genesis-content {
+      padding: 0; } }
+
 .home .featured-widget-area {
   max-width: 1140px;
   margin: 0 auto;
@@ -1822,6 +1834,11 @@ h6 {
   background-color: #1e417a;
   padding: 3rem;
   color: #fff; }
+  .archive-description a {
+    color: #fff; }
+    .archive-description a:hover {
+      color: #0073e5;
+      text-decoration: underline; }
 
 .category-desc {
   padding: 0;

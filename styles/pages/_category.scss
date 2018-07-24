@@ -2,6 +2,15 @@
   background-color: #1e417a;
   padding: 3rem;
   color: #fff;
+
+  a {
+    color: #fff;
+
+    &:hover {
+      color: #0073e5;
+      text-decoration: underline;
+    }
+  }
 }
 
 .category-desc {
